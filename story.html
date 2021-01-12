@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form a story</title>
+	<style>
+		body{
+			text-align: center;
+			background-color: #7b5141;
+		}
+         #top{
+         	display: block;
+         	width: 500px;
+         	margin: 0 auto;
+         	background-color: white;
+         }
+         #main{
+         	margin-left: 420px;
+         	margin-right: 150px;
+         	background-color: #ffb7a5;
+         	border-radius: 10px;
+         	width: 500px;
+            height: 750px;
+         }
+         h1{
+         	padding-top: 7px;
+         }
+         .paragraph{
+             display: none;
+         	margin-left:0px;
+         	margin-right: 150px;
+         	background-color: #ffb7a5;
+         	border-radius: 10px;
+         	width: 500px;
+            height: 750px;
+            font-size: large;
+            text-align: center;
+         }
+	</style>
+</head>
+<body>
+    <section id="top">
+    	<img src="index.png" alt="Form a story logo">
+    </section>
+    <section id="main">
+    	<h1>Complete the Form<br>Complete the Story!</h1>
+         <hr>
+         <form action="Story1.html" method="get" id="fillform">
+         	<label for="animal-1">Animal:</label>
+         	<input id="animal-1" type="text" name="animal-1" required>
+             <br><br>
+             
+            <label for="animal-2">another animal</label>
+            <input type="text" name="animal-2" id="animal-2" required>
+            <br><br>
+
+            <label for="animal-3">one more animal</label>
+            <input type="text" name="animal-3" id="animal-3" required>
+            <br><br>
+
+            <label for="adj-1">Adjective(past tense)</label>
+            <input type="text" name="adj-1" id="adj-1" required>
+            <br><br>
+
+            <label for="verb-1">Verb(ends in -ing):</label>
+            <input type="text" name="verb-1" id="verb-1">
+            <br><br>
+
+            <label for="num1">Number</label>
+            <input type="number" name="num1" id="num1" required>
+            <br><br>
+
+            <span id="checks">Yes or No:</span>
+             <input type="radio" name="answer" value="yes" id="yes" required>
+             <label for="yes">Yes</label>
+             <input type="radio" name="answer" id="no" value="no" required>
+             <label for="no">No</label>
+             <br><br>
+
+             <label>Relative speed(ends in -er):</label>
+             <select id="speed" name="speed" required>
+             	<option value="faster">Faster</option>
+             	<option value="quiker">Quiker</option>
+             	<option value="speedier">Speedier</option>
+             </select>
+             <br><br>
+
+             <label for="quote">Motivational quote</label>
+             <input type="text" id="quote" name="quote" list="quote-choices" required>
+             <datalist id="quote-choices">
+             	<option value="codecademy"></option>
+             	<option value="code"></option>
+             	<option value="example"></option>
+             </datalist>
+             <br><br>
+
+             <label for="message">Meaningful Message:</label>
+             <textarea id="message" name="message" rows="8" cols="40"></textarea>
+             <br><br>
+
+         	<input type="button" value="Form my Story!" onclick="store()">
+
+         </form>
+         <p class="paragraph" id="para">
+            The <span class="1"></span> And The <span class="2"></span>
+        
+        
+            A <span class="1"></span> was making fun of the <span class="2"></span> one day for being so slow.
+            
+            "Do you ever get anywhere?"he asked with a mocking laugh.
+            
+            "<span class="6"></span>", replied the <span class="2"></span> "but I get there <span class="7"></span> than you think. I'll run you a race prove it."
+            
+            The <span class="1"></span> was much <span class="4"></span> at the idea of running a race with the <span class="2"></span>. but for the fun of the thing he agreed. So the <span class="3"></span>. who had consented to act as judge, marked the distance yelled, "<span class="7"></span>".
+            
+            The <span class="1"></span> was soon far out of sight,and to make the <span class="2"></span> feel very deeply how rediculous it was for him to try a race with a <span class="1"></span>. he went off the course to practice <span class="4"></span> for <span class="5"></span> hours until the <span class="2"></span> should catch up.
+            
+            The <span class="2"></span> meanwhile kept going slowly but steadily. and, after a time, passed the place where the <span class="1"></span> was <span class="4"></span> .The <span class="1"></span> was so caught up in <span class="4"></span>; and when at last he did stop, the <span class="2"></span> was near the goal.The <span class="1"></span> now ran his swiftesy, but he could not overtake the <span class="2"></span> in time.
+            
+            
+            Moral of the Story:
+            
+            "<span class="8"></span>"
+        </p>
+        
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
